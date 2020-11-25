@@ -1,0 +1,12 @@
+<div class="containerSection" cdkDrag>
+    <div class="containerTable">
+        <table>
+            <tr *ngFor="let posicionesy of mapMatrix; let y = index" >
+              <td *ngFor="let item of posicionesy; let x = index">
+                <!-- {{ item.x }},{{ item.y }} -->
+                {{ item.value }}
+              </td>
+            </tr>
+          </table>
+    </div>
+</div>
